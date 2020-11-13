@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/dist/package.json'));
+app.use(express.static(__dirname+'/package.json'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/package.json'));
+    res.sendFile(path.join(__dirname+'/src/index.ts'));
 });
 
 app.listen(process.env.PORT || 8080);
