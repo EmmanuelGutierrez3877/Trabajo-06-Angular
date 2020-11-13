@@ -17,7 +17,7 @@ import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
