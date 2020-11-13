@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static(__dirname+'/dist/package.json'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/trabajo-06-angular-1/index.html'));
+    res.sendFile(path.join(__dirname+'/dist/package.json'));
 });
 
 app.listen(process.env.PORT || 8080);
